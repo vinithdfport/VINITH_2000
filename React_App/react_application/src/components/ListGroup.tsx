@@ -13,7 +13,7 @@ function ListGroup () {
         <h1>List Group</h1>
         <ul className="list-group">
         {items.map((item, index) => (
-            <li className="list-group-item" key={item} onClick={(event) => console.log(event)}>
+            <li className="list-group-item" key={item} onClick={(event) => console.log(event, index)}>
                 {item}
             </li>
         ))}
